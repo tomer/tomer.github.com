@@ -10,9 +10,10 @@
     body { width: 50%; margin: auto; border: 1px solid black; background: white; border-radius: 10px; }
     h1   {text-shadow: 0 0 3px blue; text-align: center; color: #eee; }
  
-    li { list-style: none;}
+    ul,li { list-style: none; padding: 0 2%; margin: 0;}
+    body ul {padding: 2%;}
     a { text-decoration: none;}
-    a:hover, a:focus { text-decoration: underline; padding-left: 2%; }
+    a:hover, a:focus { text-decoration: underline; padding: 2%; }
     a { -moz-transition: padding 0.5s; transition: padding 0.5s;}
   </style>
 </head>
@@ -21,7 +22,11 @@
   <h1>tomer@github</h1>
 
   <ul>
-    <li><a href="https://github.com/tomer/">My github page</a></li>
+    <li><a href="https://github.com/tomer/">My github page</a>
+      <ul>
+        <li><a href="http://tomer.github.com/characterPicker/">Unicode character picker</a></li>
+      </ul>
+    </li>
 
     <li><a href="http://tomercohen.com">My homepage</a></li>
   </ul>
