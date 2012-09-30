@@ -7,14 +7,29 @@
   <meta encoding="utf8" />
   <style>
     html { background: silver; margin-top: 5%;}
-    body { width: 50%; margin: auto; border: 1px solid black; background: white; border-radius: 10px; }
-    h1   {text-shadow: 0 0 3px blue; text-align: center; color: #eee; }
+    body { width: 50%; margin: auto; border: 1px solid black; background: white; border-radius: 10px; box-shadow: 0 0 10px black; }
  
     ul,li { list-style: none; padding: 0 2%; margin: 0;}
     body ul {padding: 2%;}
     a { text-decoration: none;}
-    a:hover, a:focus { text-decoration: underline; padding: 2%; }
-    a { -moz-transition: padding 0.5s; transition: padding 0.5s;}
+    
+    h1 {text-shadow: -1px -1px 0 black; color: silver; letter-spacing: 3px; text-align: center; }
+    a {text-shadow: 0 0 3px blue, 0 0 2px white; } 
+    a {text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue; color: white; }
+    a:hover { text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue; color: silver; }
+    a {transition: color 0.5s; } 
+
+body {
+  animation-duration: 5s;
+  animation-name: slidein;
+}
+ 
+@keyframes slidein {
+  from {opacity: 0; margin-top: -25%;}
+  80% {opacity: 0.5;} 
+  to  {opacity: 1; margin-top: 0;}
+}
+
   </style>
 </head>
 
